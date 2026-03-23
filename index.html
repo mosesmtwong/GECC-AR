@@ -25,13 +25,14 @@
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
             >
-                <a-image
-                    src="assets/mountain_road.glb"
+                <!-- <a-image
+                    src="assets/mountain_road.png"
                     scale="1 1 1"
                     class="clickable"
                     rotation="-90 0 0"
                     gesture-handler
-                ></a-image>
+                ></a-image> -->
+                <a-gltf-model src="mountain_road.glb" scale="0.5 0.5 0.5" position="0 0 0"></a-gltf-model>
             </a-marker>
             <a-marker
                 type="pattern"
@@ -42,13 +43,7 @@
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerB"
             >
-                <a-image
-                    src="assets/pine_tree.glb"
-                    scale="2 2 2"
-                    class="clickable"
-                    rotation="-90 0 0"
-                    gesture-handler
-                ></a-image>
+                <a-gltf-model src="pine_tree.glb" scale="0.5 0.5 0.5" position="0 0 0"></a-gltf-model>
             </a-marker>
 
             <a-entity camera></a-entity>

@@ -16,6 +16,10 @@
             embedded
             gesture-detector
         >
+            <a-assets>
+                <a-asset-item id="tree" src="assets/pine_tree.glb"></a-asset-item>
+                <a-asset-item id="hill" src="assets/mountain_road.glb"></a-asset-item>
+            </a-assets>
             <a-marker
                 type="pattern"
                 preset="custom"
@@ -32,13 +36,12 @@
                     rotation="-90 0 0"
                     gesture-handler
                 ></a-image> -->
-                <a-gltf-model
-                    src="assets/mountain_road.glb"
-                    scale="0.01 0.01 0.01"
-                    position="0 0 0"
+                <a-entity
+                    gltf-model="#hill"
+                    scale="0.1 0.1 0.1"
                     class="clickable"
                     gesture-handler>
-                </a-gltf-model>
+                </a-entity>
             </a-marker>
             <a-marker
                 type="pattern"
@@ -49,12 +52,12 @@
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerB"
             >
-                <a-gltf-model src="assets/pine_tree.glb"
-                scale="0.01 0.01 0.01"
-                position="0 0 0"
-                class="clickable"
-                gesture-handler>
-            </a-gltf-model>
+                <a-entity
+                    gltf-model="#trees"
+                    scale="0.1 0.1 0.1"
+                    class="clickable"
+                    gesture-handler>
+                </a-entity>
             </a-marker>
 
             <a-entity camera></a-entity>

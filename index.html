@@ -15,13 +15,13 @@
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" id="scene" embedded gesture-detector>
         <a-assets>
             <a-asset-item id="pine" src="assets/pine_tree.glb"></a-asset-item>
-            <a-asset-item id="eucal" src="assets/Eucalyptus.glb"></a-asset-item>
+            <!-- <a-asset-item id="eucal" src="assets/Eucalyptus.glb"></a-asset-item> -->
         </a-assets>
-        <a-marker type="pattern" preset="custom" url="assets/pattern-eucalyptus-seed.patt"
+        <!-- <a-marker type="pattern" preset="custom" url="assets/pattern-eucalyptus-seed.patt"
             raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
             <a-entity gltf-model="#eucal" scale="0.01 0.01 0.01" class="clickable" gesture-handler>
             </a-entity>
-        </a-marker>
+        </a-marker> -->
         <a-marker type="pattern" preset="custom" url="assets/pattern-pine.patt" raycaster="objects: .clickable"
             emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerB">
             <a-entity gltf-model="#pine" scale="0.01 0.01 0.01" class="clickable" gesture-handler>
